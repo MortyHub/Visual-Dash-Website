@@ -70,6 +70,7 @@ text-transform: none;
  <option value='japanese'>&#127471;&#127477; 日本</option>
  <option value='chinese'>&#127464;&#127475; 中国人</option>
  <option value='russian'>&#127479;&#127482; русский</option>
+ <option value='Gen Z'>&#127482;&#127480; Gen Z</option>
 </select></center>
 <center><img src='owo.png'></center>
 <br>
@@ -86,7 +87,7 @@ text-transform: none;
 		document.getElementById("text").innerHTML = 'Hallo, dies ist ein Discord-Bot, der hauptsächlich verwendet wird, um Ihre Nachrichten auf gute Weise zu ändern. Sehen Sie sich das Bild unter dieser Nachricht an, um ein Beispiel für eine Nachricht zu sehen, die von diesem Bot geändert wurde (Dunkelmodus). Die Funktionen dieses Bots können mit dem Befehl !v help in der Chatbox von Discord gefunden werden, wenn dieser Bot zu Ihrem Server hinzugefügt wurde. Wenn der Bot aufgrund einer Änderung nicht mehr funktioniert, treten Sie bitte dem Support-Server bei, der neben der Schaltfläche "Bot hinzufügen" aufgeführt ist. Sobald Sie dem Server beitreten, erstellen Sie bitte einen Server und der Entwickler, auch bekannt als Besitzer, wird Ihnen helfen.';
 	} else {
 		if(selectedValue == 'english') {
-			document.getElementById("text").innerHTML = 'Hello, this is a discord bot that is mainly used to change your messages in a good way, look at the image under this message to see an example of a message that has been changed by this bot (dark mode). The features of this bot can be found by using the command !v help in the chat box of discord when this bot has been added to your server. If by any change the bot stops working please join the support server that will be listed beside the "add bot" button, once you join the server please make a server and the developer aka the owner will help you.';
+			document.getElementById("text").innerHTML = 'Hello, this is a discord bot that is mainly used to change your messages in a good way, look at the image under this message to see an example of a message that has been changed by this bot (dark mode). The features of this bot can be found by using the command !v help in the chat box of discord when this bot has been added to your server. If by any change the bot stops working please join the support server that will be listed beside the "add bot" button, once you join the server please make a server ticket and the developer aka the owner will help you.';
 		} else {
 			if(selectedValue == 'japanese') {
 				document.getElementById("text").innerHTML = 'こんにちは、これは主にメッセージを適切に変更するために使用される不和ボットです。このボット（ダークモード）によって変更されたメッセージの例を確認するには、このメッセージの下の画像を見てください。このボットの機能は、このボットがサーバーに追加されたときに、不和のチャットボックスでコマンド!v helpを使用して見つけることができます。変更によってボットが機能しなくなった場合は、[ボットの追加]ボタンの横に表示されるサポートサーバーに参加してください。サーバーに参加したら、サーバーを作成してください。開発者、別名所有者がお手伝いします。';
@@ -96,6 +97,10 @@ text-transform: none;
 				} else {
 					if(selectedValue == 'russian') {
 						document.getElementById('text').innerHTML = 'Здравствуйте, это бот Discord, который в основном используется для правильного изменения ваших сообщений. Посмотрите на изображение под этим сообщением, чтобы увидеть пример сообщения, которое было изменено этим ботом (темный режим). Возможности этого бота можно найти с помощью команды !v help в окне чата Discord, когда этот бот был добавлен на ваш сервер. Если из-за каких-либо изменений бот перестанет работать, присоединитесь к серверу поддержки, который будет указан рядом с кнопкой «добавить бота». Как только вы присоединитесь к серверу, пожалуйста, создайте сервер, и разработчик, он же владелец, поможет вам.';
+					} else {
+						if(selectedValue == 'Gen Z') {
+							document.getElementById('text').innerHTML = 'Ayy, this be a discord bot that be mainly used to change ya messages in a litty way, look at the image under this message to see an example of a message that has been changed by this bot (dark mode). The features of this bot can be found by using the command !v help in the chat box of discord when this bot has been added to ya server. If by any change the bot stops working bitch join the support server that will be listed beside the "add bot" button, once ya join the server bitch make a server ticket n the developer aka the owner will help ya.'
+													}
 					}
 				}
 			}
