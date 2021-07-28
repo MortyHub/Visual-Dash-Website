@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
+	  <title>Visual Dash</title>
 	  <section>
 		  <img src='icon.png' height:16 width:16 style='float:left;'>
 <h1>Visual Dash</h1>
@@ -16,7 +17,7 @@
 	<br><br>
 	<br><br>
 	<center>
-		<h3>Hallo</h3>
+		<strong><h3 id='text'>Hello, this is a discord bot that is mainly used to change your messages in a good way, look at the image under this message to see an example of a message that has been changed by this bot (dark mode). The features of this bot can be found by using the command !v help in the chat box of discord when this bot has been added to your server. If by any change the bot stops working please join the support server that will be listed beside the 'add bot' button, once you join the server please make a server and the developer aka the owner will help you.</h3></strong>
 	</center>
   </body>
   <style>
@@ -24,9 +25,11 @@
     background-color: #121212;
     color: white;
 	white-space:inherit;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
   section {
 	  height:150px;
+	  width:100%;
 	  background-color:black;
 	  color:white;
 	  text-align:center;
@@ -45,7 +48,60 @@ text-transform: none;
   img {
 	  border-radius:80px;
 	  border-color:#121212;
-	  border-width:80px;
+	  border-width:150px;
+  }
+  button {
+	  height:150px;
+	  width:99%;
+	  color:white;
+	  background-color:#121212;
+	  font-size:50px;
+  }
+  select {
+	  width:100%;
+	  background-color:#121212;
+	  color:white;
+	  font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
   </style>
+  <center><select onchange='Change();' id='selectBox'>
+ <option value='english'>&#127482;&#127480; English</option>
+ <option value='german'>&#127465;&#127466; Deutsch</option>
+ <option value='japanese'>&#127471;&#127477; 日本</option>
+ <option value='chinese'>&#127464;&#127475; 中国人</option>
+ <option value='russian'>&#127479;&#127482; русский</option>
+</select></center>
+<center><img src='owo.png'></center>
+<br>
+<br>
+<section class='button'>
+	<button>Add Bot</button>
+</section>
+<script>
+	//document.getElementById("text").innerHTML = '';
+	function Change() {
+		var selectBox = document.getElementById("selectBox");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    if(selectedValue == 'german') {
+		document.getElementById("text").innerHTML = 'Hallo, dies ist ein Discord-Bot, der hauptsächlich verwendet wird, um Ihre Nachrichten auf gute Weise zu ändern. Sehen Sie sich das Bild unter dieser Nachricht an, um ein Beispiel für eine Nachricht zu sehen, die von diesem Bot geändert wurde (Dunkelmodus). Die Funktionen dieses Bots können mit dem Befehl !v help in der Chatbox von Discord gefunden werden, wenn dieser Bot zu Ihrem Server hinzugefügt wurde. Wenn der Bot aufgrund einer Änderung nicht mehr funktioniert, treten Sie bitte dem Support-Server bei, der neben der Schaltfläche "Bot hinzufügen" aufgeführt ist. Sobald Sie dem Server beitreten, erstellen Sie bitte einen Server und der Entwickler, auch bekannt als Besitzer, wird Ihnen helfen.';
+	} else {
+		if(selectedValue == 'english') {
+			document.getElementById("text").innerHTML = 'Hello, this is a discord bot that is mainly used to change your messages in a good way, look at the image under this message to see an example of a message that has been changed by this bot (dark mode). The features of this bot can be found by using the command !v help in the chat box of discord when this bot has been added to your server. If by any change the bot stops working please join the support server that will be listed beside the "add bot" button, once you join the server please make a server and the developer aka the owner will help you.';
+		} else {
+			if(selectedValue == 'japanese') {
+				document.getElementById("text").innerHTML = 'こんにちは、これは主にメッセージを適切に変更するために使用される不和ボットです。このボット（ダークモード）によって変更されたメッセージの例を確認するには、このメッセージの下の画像を見てください。このボットの機能は、このボットがサーバーに追加されたときに、不和のチャットボックスでコマンド!v helpを使用して見つけることができます。変更によってボットが機能しなくなった場合は、[ボットの追加]ボタンの横に表示されるサポートサーバーに参加してください。サーバーに参加したら、サーバーを作成してください。開発者、別名所有者がお手伝いします。';
+			} else {
+				if(selectedValue == 'chinese') {
+					document.getElementById("text").innerHTML = '您好，這是一個discord bot，主要用於以良好的方式更改您的消息，請查看此消息下方的圖像以查看已被此機器人更改的消息示例（暗模式）。將此機器人添加到您的服務器後，可以通過在不和諧聊天框中使用命令 !v help 來找到該機器人的功能。如果由於任何更改機器人停止工作，請加入將在“添加機器人”按鈕旁邊列出的支持服務器，一旦您加入服務器，請創建一個服務器，開發人員（即所有者）將幫助您。';
+				} else {
+					if(selectedValue == 'russian') {
+						document.getElementById('text').innerHTML = 'Здравствуйте, это бот Discord, который в основном используется для правильного изменения ваших сообщений. Посмотрите на изображение под этим сообщением, чтобы увидеть пример сообщения, которое было изменено этим ботом (темный режим). Возможности этого бота можно найти с помощью команды !v help в окне чата Discord, когда этот бот был добавлен на ваш сервер. Если из-за каких-либо изменений бот перестанет работать, присоединитесь к серверу поддержки, который будет указан рядом с кнопкой «добавить бота». Как только вы присоединитесь к серверу, пожалуйста, создайте сервер, и разработчик, он же владелец, поможет вам.';
+					}
+				}
+			}
+		}
+	}
+	
+	}
+</script>
 </html>
